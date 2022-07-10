@@ -1,4 +1,13 @@
 import React from 'react';
+<<<<<<< HEAD
+=======
+import Chatbot from 'react-chatbot-kit';
+
+import config from './components/chatbot/config';
+import ActionProvider from './components/chatbot/ActionProvider';
+import MessageParser from './components/chatbot/MessageParser';
+
+>>>>>>> 8492daee3a17ae4e8b6bed5346121c385a093e6b
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Navbar,Container,Nav}from 'react-bootstrap';
@@ -9,6 +18,7 @@ import Rout from './components/Rout';
 
 function App() {
   return (
+<<<<<<< HEAD
     <div >
         <Navbar bg="dark" variant="dark">
     <Container>
@@ -83,6 +93,17 @@ function App() {
   
 		</div>
  
+=======
+    <div className="App">
+      <div style={{ maxWidth: "300px"}}>
+        <Chatbot 
+          config={config}
+          actionProvider={ActionProvider}
+          messageParser = {MessageParser}
+        />
+      </div>
+    </div>
+>>>>>>> 8492daee3a17ae4e8b6bed5346121c385a093e6b
   );
 }
 

@@ -85,7 +85,17 @@ function App() {
    </section>
 
 </main>
-  
+<section>
+	            <div style={{ maxWidth: "300px" }}>
+        <Chatbot
+          config={config}
+          actionProvider={ActionProvider}
+          messageParser={MessageParser}
+        />
+      </div>  
+	      </section>
+
+
 		</div>
 
   );
